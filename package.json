@@ -1,0 +1,55 @@
+{
+  "name": "@promopilot/security-headers",
+  "version": "1.0.0",
+  "description": "Check HTTP security headers from the command line: HSTS, Content-Security-Policy quality, X-Content-Type-Options, clickjacking protection, Referrer-Policy, Permissions-Policy, COOP, cookie flags and version leaks, with a 0-100 score and A-F grade. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "security-headers",
+    "http-headers",
+    "content-security-policy",
+    "csp",
+    "hsts",
+    "web-security",
+    "owasp",
+    "appsec",
+    "clickjacking",
+    "devsecops",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/security-headers.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=security-headers",
+  "bugs": {
+    "url": "https://github.com/ksanyok/security-headers/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/security-headers.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "security-headers": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

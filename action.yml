@@ -1,0 +1,16 @@
+name: "Security Headers Checker by PromoPilot"
+description: "Grade a site's HTTP security headers and fail the build below a minimum grade."
+author: "Alexandr Krikun"
+branding:
+  icon: "shield"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the security-headers CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run security-headers
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}
