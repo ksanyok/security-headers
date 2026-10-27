@@ -17,7 +17,7 @@ Options:
   --json            Print JSON
   -h, --help        Show this help
 
-Online version (no install): https://promopilot.link/en/tools/security-headers.php
+Online version (no install): https://promopilot.link/en/tools/security-headers.php?utm_source=github&utm_medium=cli&utm_campaign=tools&utm_content=security-headers
 `;
 
 const args = process.argv.slice(2);
